@@ -1,13 +1,20 @@
 #pragma once
-#include <string>
-std::string showInterace()
+
+
+class Interface
 {
-    return 
-    "Witaj, to sa nastepujace opcje:\n\n"
-    "\t1.Dodawanie\n"
-    "\t2.Odejmowanie\n"
-    "\t3.Mnozenie\n"
-    "\t4.Dzielenie\n\n"
-    "Wybieram:"
-    ;
+    public:
+    std::string showInterface();
+};
+
+bool isCorrectVariable(double userOption)
+{
+    if(
+        userOption==1 ||
+        userOption==2 ||
+        userOption==3 ||
+        userOption==4 
+    )
+    return true;
+    return false;
 }
