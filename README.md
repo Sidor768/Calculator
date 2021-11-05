@@ -1,2 +1,2 @@
 # Calculator
-Simple procject to learning SOLID 
+Simple procject to learning SOLID etc...
