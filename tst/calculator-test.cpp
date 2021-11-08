@@ -1,9 +1,12 @@
 #include "gtest/gtest.h"
 #include "../src/interface.cpp"
+#include "../src/display.cpp"
+#include "../src/controller.cpp"
 
-TEST(TestOfInterfejs, showInterfacefunctionShouldPrintInterface) {
-    Interface Inter ;
-    EXPECT_EQ(Inter.showInterface(),
+
+TEST(TestOfDisplay, showInterfacefunctionShouldPrintInterface) {
+    Display DisplayClass;
+    EXPECT_EQ(DisplayClass.showInterface(),
     "Witaj, to sa nastepujace opcje:\n\n"
     "\t1.Dodawanie\n"
     "\t2.Odejmowanie\n"
@@ -12,11 +15,12 @@ TEST(TestOfInterfejs, showInterfacefunctionShouldPrintInterface) {
     "Wybieram:"
     );
 }
-TEST(TestOfInterfejs,functionTestingOpcionNumberFromUser)
+TEST(TestOfController,functionTestingOpcionNumberFromUser)
 {
-    EXPECT_EQ(isCorrectVariable(0),false);
-    EXPECT_EQ(isCorrectVariable(5),false);
-    EXPECT_EQ(isCorrectVariable(3),true);
-    EXPECT_EQ(isCorrectVariable(2.5),false);
+    Controller controller;
+    EXPECT_EQ(controller.isCorrectVariable(0),false);
+    EXPECT_EQ(controller.isCorrectVariable(5),false);
+    EXPECT_EQ(controller.isCorrectVariable(3),true);
+    EXPECT_EQ(controller.isCorrectVariable(2.5),false);
 }
 
