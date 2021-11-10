@@ -1,11 +1,12 @@
-#include <cctype>
 #include "plus.hpp"
 
 template<typename T,typename T1>
 auto Plus::plus(T First,T1 Second)
 {
+    //T ReturnValue=First+Second;
     return First+Second;
 }
+
 template<typename T>
 bool Plus::isValidNumber(T number)
 {
