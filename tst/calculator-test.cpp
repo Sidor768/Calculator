@@ -23,4 +23,8 @@ TEST(TestOfController,functionTestingOpcionNumberFromUser)
     EXPECT_EQ(controller.isCorrectVariable(3),true);
     EXPECT_EQ(controller.isCorrectVariable(2.5),false);
 }
+TEST(TestOfInterface,getOpctionFunctionShouldCallController)
+{
+   // EXPECT_EQ(interface.getOption(4),)
+}
 
