@@ -1,8 +1,7 @@
 #pragma once
 
-
 class Controller
 {
     public:
-    bool isCorrectVariable(double userOption);
+    void selectFunction(int userOption);
 };

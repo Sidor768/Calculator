@@ -1,4 +1,3 @@
-#include <string>
 #include "display.hpp"
 
 std::string Display::showInterface()
@@ -11,4 +10,9 @@ std::string Display::showInterface()
     "\t4.Dzielenie\n\n"
     "Wybieram:"
     ;
+}
+std::string Display::showSpaceForNNumber(int numberOfDate)
+{
+    std::string numberOfDateInString = std::to_string(numberOfDate);
+    return "Podaj "+numberOfDateInString+". liczbe:";
 }

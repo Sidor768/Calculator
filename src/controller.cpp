@@ -1,13 +1,13 @@
 #include "controller.hpp"
+#include "display.hpp"
 
-    bool Controller::isCorrectVariable(double userOption)
+void Controller::selectFunction(int userOption)
+{
+    switch (userOption)
     {
-        if(
-            userOption==1 ||
-            userOption==2 ||
-            userOption==3 ||
-            userOption==4 
-        )
-        return true;
-        return false;
+    case 1: 
+        break;
+    default:
+        break;
     }
+}
