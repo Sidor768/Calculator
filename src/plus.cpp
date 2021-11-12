@@ -1,20 +1,15 @@
 #include "plus.hpp"
 
 template<typename T,typename T1>
-auto Plus::plus(T First,T1 Second)
+auto Plus::plus(T first,T1 second)
 {
-    //T ReturnValue=First+Second;
-    return First+Second;
+    return first+second;
 }
 
 template<typename T>
 bool Plus::isValidNumber(T number)
 {
-    if(isalpha(number))
-        return false;
-    if(isxdigit(number))
-    {
-        return true;
-    }
-    return false;
+    if(std::isalpha(number))return false;
+    if(std::isnan(number))return false;
+    return true;
 }

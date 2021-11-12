@@ -8,10 +8,9 @@ std::string Display::showInterface()
     "\t2.Odejmowanie\n"
     "\t3.Mnozenie\n"
     "\t4.Dzielenie\n\n"
-    "Wybieram:"
-    ;
+    "Wybieram:";
 }
-std::string Display::showSpaceForNNumber(int numberOfDate)
+std::string Display::showAskingForNNumber(int numberOfDate)
 {
     std::string numberOfDateInString = std::to_string(numberOfDate);
     return "Podaj "+numberOfDateInString+". liczbe:";

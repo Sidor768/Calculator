@@ -5,5 +5,5 @@ class Display
 {
     public:
     std::string showInterface();
-    std::string showSpaceForNNumber(int numberOfDate);
+    std::string showAskingForNNumber(int numberOfDate);
 };
