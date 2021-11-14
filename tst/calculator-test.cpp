@@ -17,16 +17,18 @@ TEST(TestOfDisplay, ShowInterfacefunctionShouldPrintInterface) {
 TEST(TestOfDisplay, ShowAskingNNumberShouldReturnNumberSameAsNumberGivenToFunction)
 {
     Display DisplayClass;
-    EXPECT_EQ(DisplayClass.showAskingForNNumber(3),"Podaj 3. liczbe:");
-    EXPECT_EQ(DisplayClass.showAskingForNNumber(0),"Podaj 0. liczbe:");
-    EXPECT_EQ(DisplayClass.showAskingForNNumber(20),"Podaj 20. liczbe:");
+    EXPECT_EQ(DisplayClass.showAskingForNNumbers(3),"Podaj po przecinku 3. liczby:");
+    EXPECT_EQ(DisplayClass.showAskingForNNumbers(0),"Bledna ilosc liczb");
+    EXPECT_EQ(DisplayClass.showAskingForNNumbers(-1),"Bledna ilosc liczb");
 }
 TEST(TestOfInterface,SelectOpctionFunctionShouldCallController)
 {
-    //Controller ControllerClsss;
-    //Plus PlusClass;
-    //Display DisplayClass;
-    //EXPECT_EQ(controller.selectFunction(1,DisplayClass.showAskingForNNumber);how to test calling function xD? 
+    Controller ControllerClsss;
+    Plus PlusClass;
+    Display DisplayClass;
+    EXPECT_EQ(ControllerClsss.selectFunction(1),true);
+    EXPECT_EQ(ControllerClsss.selectFunction(2),true);
+    EXPECT_EQ(ControllerClsss.selectFunction(4),false);
 }
 TEST(TestOfPlusFunctionInPlusClass,PlusShouldReturnCorrectVariable)
 {

@@ -5,5 +5,6 @@ class Display
 {
     public:
     std::string showInterface();
-    std::string showAskingForNNumber(int numberOfDate);
+    std::string showAskingForNNumbers(int numberOfDate);
+    
 };

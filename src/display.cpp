@@ -10,8 +10,9 @@ std::string Display::showInterface()
     "\t4.Dzielenie\n\n"
     "Wybieram:";
 }
-std::string Display::showAskingForNNumber(int numberOfDate)
+std::string Display::showAskingForNNumbers(int numberOfDate)
 {
+    if(numberOfDate<1)return "Bledna ilosc liczb";
     std::string numberOfDateInString = std::to_string(numberOfDate);
-    return "Podaj "+numberOfDateInString+". liczbe:";
+    return "Podaj po przecinku "+numberOfDateInString+". liczby:";
 }

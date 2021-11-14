@@ -3,5 +3,5 @@
 class Controller
 {
     public:
-    void selectFunction(int userOption);
+    bool selectFunction(int userOption);
 };
